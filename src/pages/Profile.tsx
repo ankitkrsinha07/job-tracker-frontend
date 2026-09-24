@@ -11,7 +11,7 @@ interface ProfileData {
 }
 
 function Profile() {
-  const { logout, user } = useAuth();
+  const { logout } = useAuth();
   const navigate = useNavigate();
 
   const { data: profile, isLoading } = useQuery({
